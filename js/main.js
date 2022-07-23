@@ -37,7 +37,7 @@ form.addEventListener("submit", (evento) => {
 
 function criaElemento(item) {
     const novoItem = document.createElement('li');
-    novoItem.classList.add('lista');
+    novoItem.classList.add('item');
 
     const numeroItem = document.createElement('strong');
     numeroItem.innerHTML = item.quantidade;
