@@ -67,9 +67,8 @@ function botaoDeleta(id){
 }
 
 function deletaElemento(tag, id){
+    console.log(tag)
     tag.remove();
-
-
     itens.splice(itens.findIndex(elemento => elemento.id === id),1);
 
     localStorage.setItem("itens", JSON.stringify(itens));
